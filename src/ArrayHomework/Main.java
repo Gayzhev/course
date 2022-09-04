@@ -33,7 +33,7 @@ public class Main {
             if (a == b) {
                 System.out.println("равны");}
             else{
-                    System.out.println("первый и последний элементы - не равны");
+                    System.out.println(" первый и последний элементы - не равны");
 
                 }
             }
