@@ -1,8 +1,7 @@
-package ArrayHomework;//package ArrayHomework;
+package ArrayHomework;
 
 //        6. Написати програму, яка буде шукати найменше число в масиві цілих чисел.
 
-//import java.util.Arrays;
 //
 //public class Arrays2homework {
 //    public static void main(String[] args) {
