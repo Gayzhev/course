@@ -1,13 +1,14 @@
 package project_loyalty;
 
 public class Customer {
+    public Customer(String name) {
+        this.name = name;
+    }
     private String name;
     private String memberType;
-    private boolean isMember;
+    private boolean isMember = false;
 
-    public Customer() {
-    }
-    public Customer(String name, String memberType, boolean isMember) {
+        public Customer(String name, String memberType, boolean isMember) {
         this.name = name;
         this.memberType = memberType;
         this.isMember = isMember;
@@ -19,7 +20,7 @@ public class Customer {
         return memberType;
     }
     public boolean getIsMember() {
-        return true;      // ошибка. неправильно использую boolean
+        return isMember;
     }
     public void setName(String name) {
         this.name = name;
@@ -31,14 +32,12 @@ public class Customer {
         this.isMember = isMember;
         return isMember;
     }
-
-    @Override
     public String toString() {
         return "Customer{" +
                 "name='" + name + '\'' +
                 ", memberType='" + memberType + '\'' +
-                ", memberShip=" + isMember +
-                '}';
+                ", memberShip=" + isMember +;"
     }
-}
+        }
+
 

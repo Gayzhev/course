@@ -1,29 +1,27 @@
-
 package project_loyalty;
-
+import java.util.Date;
 
 public class Visit {
 
-    private String Customer;
-    private double ServiceExpense;
-    private double ProductExpense;
+    private Customer customer;
+    private double serviceExpense;
+    private double productExpense;
+    private Date date;
 
-    private String Calendar;
-
-    public Visit(String customer, double serviceExpense, double productExpense, String calendar) {
-        Customer = customer;
-        ServiceExpense = serviceExpense;
-        ProductExpense = productExpense;
-        Calendar = calendar;
+    public Visit(String name, Date date) {
+        this.customer = new Customer(name);
+        this.date = date;
     }
 
-
-
-//    public Calendar getCalendar() {
-//        return Calendar;
+    public String getName() {
+    return customer.getName();
     }
-
-//    {
-//                System.out.print(Calendar1.getCalendar);
-//    }
-//}
+    public double getServiceExpense() {
+        return serviceExpense;
+    }
+    public double getProductExpense() {
+        return productExpense;
+    }
+    public double getTotalExpense() {
+        return serviceExpense + productExpense;
+    }
