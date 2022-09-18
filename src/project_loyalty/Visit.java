@@ -14,14 +14,18 @@ public class Visit {
     }
 
     public String getName() {
-    return customer.getName();
+        return customer.getName();
     }
+
     public double getServiceExpense() {
         return serviceExpense;
     }
+
     public double getProductExpense() {
         return productExpense;
     }
+
     public double getTotalExpense() {
         return serviceExpense + productExpense;
     }
+}

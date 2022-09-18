@@ -32,12 +32,8 @@ public class Customer {
         this.isMember = isMember;
         return isMember;
     }
-    public String toString() {
-        return "Customer{" +
-                "name='" + name + '\'' +
-                ", memberType='" + memberType + '\'' +
-                ", memberShip=" + isMember +;"
+
     }
-        }
+
 
 

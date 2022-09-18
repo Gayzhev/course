@@ -10,7 +10,7 @@ public class DiscountRate {
     private static double productDiscountSilver = 0.1;
 
     public static double getServiceDiscountRate(String type) {
-        switch() {                                              ////должно быть условие
+        switch(type) {
             case "Premium":
                 return serviceDiscountPremium;
             case "Gold":
@@ -18,10 +18,11 @@ public class DiscountRate {
             case "Silver":
                 return serviceDiscountSilver;
         }
+        return 0;
     }
 
     public static double getProductDiscountRate(String type) {
-        switch() {
+        switch(type) {
             case "Premium":
                 return productDiscountPremium;
             case "Gold":
@@ -29,5 +30,6 @@ public class DiscountRate {
             case "Silver":
                 return productDiscountSilver;
         }
+        return 0;
     }
 }
