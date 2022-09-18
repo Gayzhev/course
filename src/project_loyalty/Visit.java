@@ -28,4 +28,5 @@ public class Visit {
     public double getTotalExpense() {
         return serviceExpense + productExpense;
     }
+
 }

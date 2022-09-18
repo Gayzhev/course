@@ -13,8 +13,5 @@ Customer customer3=new Customer("Frol","Platinum",true);
 
 System.out.println(customer2);
     }
-
-
-
     }
 

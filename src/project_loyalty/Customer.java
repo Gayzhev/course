@@ -32,8 +32,7 @@ public class Customer {
         this.isMember = isMember;
         return isMember;
     }
-
-    }
+}
 
 
 
