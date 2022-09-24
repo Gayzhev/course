@@ -25,17 +25,18 @@ public class Homework3 {
 //        System.out.println("Максимальное число: " + dou3);
 
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Input first double: ");
-        double dou1 = scan.nextInt();
-        System.out.println("Input second double: ");
-        double dou2 = scan.nextInt();
-        System.out.println("Input third double: ");
-        double dou3 = scan.nextInt();
-        if (dou2 > dou1) && (dou3 > dou2) {
-            System.out.println("True");
-        } else {
-            System.out.println("False");
+
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Input first double: ");
+            double dou1 = scan.nextDouble();
+            System.out.println("Input second double: ");
+            double dou2 = scan.nextDouble();
+            System.out.println("Input third double: ");
+            double dou3 = scan.nextDouble();
+            if ((dou2 > dou1) && (dou3 > dou2)) {
+                System.out.println("True");
+            } else {
+                System.out.println("False");
         }
     }
 }
